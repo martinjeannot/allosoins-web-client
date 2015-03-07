@@ -12,11 +12,11 @@ angular.module('allosoinsWebClientApp')
     $scope.uiConfig = {
       calendar: {
         header: {
-          left: 'prev,next today',
-          center: 'title',
-          right: 'month,agendaWeek,agendaDay'
+          left: '',
+          center: 'prev,next title',
+          right: 'agendaDay agendaWeek'
         },
-        defaultDate: '2015-03-08',
+        defaultView: 'agendaWeek',
         lang: 'fr',
         editable: true,
         eventLimit: true, // allow "more" link when too many events
@@ -101,4 +101,11 @@ angular.module('allosoinsWebClientApp')
         ]
       }
     };
+
+
+
+    $scope.today = function() {
+      $scope.dt = new Date();
+    };
+    $scope.today();
   });

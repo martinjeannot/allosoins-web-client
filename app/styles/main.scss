@@ -12,6 +12,8 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  /* Prevent the top sticky navbar from overlapping with page content */
+  padding-top: 70px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

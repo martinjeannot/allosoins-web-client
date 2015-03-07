@@ -102,7 +102,7 @@ angular.module('allosoinsWebClientApp')
       }
     };
 
-
+    $scope.eventSources = [];
 
     $scope.today = function() {
       $scope.dt = new Date();

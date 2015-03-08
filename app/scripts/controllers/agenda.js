@@ -8,7 +8,7 @@
  * Controller of the Agenda feature
  */
 angular.module('allosoinsWebClientApp')
-  .controller('AgendaController', function ($scope) {
+  .controller('AgendaController', function ($scope, ngDialog) {
     $scope.uiConfig = {
       calendar: {
         header: {
@@ -98,7 +98,13 @@ angular.module('allosoinsWebClientApp')
             start: '2015-03-09T10:00:00',
             end: '2015-03-09T12:00:00'
           }
-        ]
+        ],
+        eventClick: function(event/*, jsEvent, view*/) {
+          ngDialog.open({
+            template: 'views/event.html',
+            data: event
+          });
+        }
       }
     };
 

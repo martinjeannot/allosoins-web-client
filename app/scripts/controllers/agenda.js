@@ -19,6 +19,7 @@ angular.module('allosoinsWebClientApp')
         defaultView: 'agendaWeek',
         lang: 'fr',
         editable: true,
+        droppable: true, // allow events to be dropped onto the calendar
         eventLimit: true, // allow "more" link when too many events
         events: [
           // 2015-03-09 8:00 - 10:00

@@ -148,7 +148,7 @@ body {
       &:hover,
       &:focus {
         color: $navbar-default-link-active-color;
-        background-color: $navbar-default-link-active-bg;
+        background-color: $navbar-mvp-link-active-bg;
       }
     }
     > .disabled > a {

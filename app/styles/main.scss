@@ -112,6 +112,14 @@ body {
   }
 }
 
+.ellipsis {
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 /* -----------------------------------*/
 /* ---------->>> NAVBAR <<<-----------*/
 /* -----------------------------------*/
@@ -247,3 +255,20 @@ body {
     }
   }
 }
+
+/* -----------------------------------*/
+/* ---------->>> AGENDA <<<-----------*/
+/* -----------------------------------*/
+
+/*.fc-content {
+  white-space: normal !important;
+  display: inline-flex;
+
+  .fc-event-toolbar {
+    //white-space: nowrap;
+
+    .glyphicon {
+      margin-left: 10px;
+    }
+  }
+}*/

@@ -20,7 +20,9 @@ angular.module('allosoinsWebClientApp')
 
     return {
       getPatientById: function (id) {
-        return patient;
+        if (id) {
+          return patient;
+        }
       }
     };
   });

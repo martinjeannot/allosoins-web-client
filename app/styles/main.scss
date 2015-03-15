@@ -135,6 +135,13 @@ body {
       color: $navbar-default-brand-hover-color;
       background-color: $navbar-default-brand-hover-bg;
     }
+
+    padding: 0; // required when brand is an image
+
+    img {
+      height: inherit;
+      margin-left: 15px;
+    }
   }
 
   .navbar-text {

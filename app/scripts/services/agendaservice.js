@@ -16,7 +16,8 @@ angular.module('allosoinsWebClientApp')
         title: 'DURAND Sophie',
         start: '2015-03-12T08:00:00',
         end: '2015-03-12T10:00:00',
-        patientId: '507f1f77bcf86cd799439014'
+        patientId: '507f1f77bcf86cd799439014',
+        reason: 'pansement'
       },
       {
         _id: '507f1f77bcf86cd799439012',
@@ -24,7 +25,8 @@ angular.module('allosoinsWebClientApp')
         title: 'DURAND Sophie 2',
         start: '2015-03-09T08:00:00',
         end: '2015-03-09T10:00:00',
-        patientId: '507f1f77bcf86cd799439014'
+        patientId: '507f1f77bcf86cd799439014',
+        reason: 'prise de sang'
       },
       {
         _id: '507f1f77bcf86cd799439013',
@@ -32,7 +34,8 @@ angular.module('allosoinsWebClientApp')
         title: 'DURAND Sophie 3',
         start: '2015-03-09T08:00:00',
         end: '2015-03-09T10:00:00',
-        patientId: '507f1f77bcf86cd799439014'
+        patientId: '507f1f77bcf86cd799439014',
+        reason: 'injection'
       }
     ];
 

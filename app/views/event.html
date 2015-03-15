@@ -1,13 +1,83 @@
-<div class="ngdialog-message">
-  <h2>{{ ngDialogData.title }}</h2>
-  <div>Popup de modification de consultation :</div>
-  <ul>
-    <li>Nom / Prénom</li>
-    <li>Téléphone / E-mail</li>
-    <li>Rue / Code postal</li>
-    <li>blablabla</li>
-  </ul>
-</div>
-<div class="ngdialog-buttons">
-  <button type="button" class="ngdialog-button ngdialog-button-primary">Valider</button>
-</div>
+<form name="eventForm" role="form">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Modifier la consultation</h2>
+    </div>
+    <div id="event-type" class="col-md-6 text-center">
+      <input type="radio" ng-model="event.type" value="atHome"> Domicile
+      <input type="radio" ng-model="event.type" value="office" style="margin-left: 20px;"> Cabinet
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <button type="button" id="patient-search-btn" class="btn btn-primary">Rechercher un patient existant</button>
+    </div>
+  </div>
+
+
+  <div class="row">
+
+    <!-- Patient section -->
+
+    <div class="col-md-8">
+
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" ng-model="patient.lastName" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <input type="text" ng-model="patient.firstName" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <input type="date" ng-model="patient.birthDate" class="form-control">
+        </div>
+        <div class="col-md-6">
+          <input type="text" ng-model="patient.phoneNumber" class="form-control">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <input type="email" ng-model="patient.email" class="form-control">
+        </div>
+      </div>
+
+      <h4>Adresse</h4>
+
+      <div class="row">
+        <div class="col-md-12">
+          <input type="text" ng-model="patient.address" class="form-control">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Event section -->
+
+    <div class="col-md-4">
+
+      <h4>Consultation</h4>
+
+      <div class="row">
+        <div class="col-md-12">
+          <select ng-model="event.reason">
+            <option value="pansement">Pansement</option>
+            <option value="prise de sang">Prise de sang</option>
+            <option value="injection">Injection</option>
+          </select>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <button type="submit" class="btn btn-success">Valider</button>
+    </div>
+  </div>
+</form>

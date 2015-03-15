@@ -272,3 +272,19 @@ body {
     }
   }
 }*/
+
+/* -----------------------------------*/
+/* ---------->>> EVENT <<<------------*/
+/* -----------------------------------*/
+
+.ngdialog-theme-default .ngdialog-content {
+  width: 800px !important;
+
+  .row {
+    margin-bottom: 10px;
+  }
+
+  #event-type {
+    margin-top: 25px;
+  }
+}

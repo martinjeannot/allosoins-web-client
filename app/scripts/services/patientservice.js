@@ -15,7 +15,8 @@ angular.module('allosoinsWebClientApp')
       lastName: 'BIGO',
       address: '82 rue Norbert Segard, 75015 PARIS',
       phoneNumber: '06 08 95 43 66',
-      birthDate: '1976-03-12T11:31:29.395Z'
+      birthDate: new Date(1976, 3, 12),
+      email: 'emmanuel.bigo@gmail.com'
     };
 
     return {

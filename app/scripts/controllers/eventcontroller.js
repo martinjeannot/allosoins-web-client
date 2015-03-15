@@ -8,10 +8,7 @@
  * Controller of the allosoinsWebClientApp
  */
 angular.module('allosoinsWebClientApp')
-  .controller('EventController', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('EventController', function ($scope, patientService) {
+    $scope.event = $scope.ngDialogData;
+    $scope.patient = patientService.getPatientById($scope.event.patientId);
   });

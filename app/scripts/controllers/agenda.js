@@ -56,6 +56,7 @@ angular.module('allosoinsWebClientApp')
         eventClick: function (event/*, jsEvent, view*/) {
           ngDialog.open({
             template: 'views/event.html',
+            controller: 'EventController',
             data: event
           });
         }

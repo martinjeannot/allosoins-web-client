@@ -8,7 +8,7 @@
  * Controller of the Agenda feature
  */
 angular.module('allosoinsWebClientApp')
-  .controller('AgendaController', function ($scope, ngDialog, $log) {
+  .controller('AgendaController', function ($scope, agendaService, ngDialog) {
     $scope.uiConfig = {
       calendar: {
         header: {
@@ -21,29 +21,7 @@ angular.module('allosoinsWebClientApp')
         editable: true,
         droppable: true, // allow events to be dropped onto the calendar
         eventLimit: true, // allow "more" link when too many events
-        events: [
-          {
-            _id: '507f1f77bcf86cd799439011',
-            type: 'office',
-            title: 'DURAND Sophie',
-            start: '2015-03-12T08:00:00',
-            end: '2015-03-12T10:00:00'
-          },
-          {
-            _id: '507f1f77bcf86cd799439012',
-            type: 'atHome',
-            title: 'DURAND Sophie 2',
-            start: '2015-03-09T08:00:00',
-            end: '2015-03-09T10:00:00'
-          },
-          {
-            _id: '507f1f77bcf86cd799439013',
-            type: 'atHome',
-            title: 'DURAND Sophie 3',
-            start: '2015-03-09T08:00:00',
-            end: '2015-03-09T10:00:00'
-          }
-        ],
+        events: agendaService.getEvents(),
         eventRender: function (event, element, view) {
           switch (view.type) {
             case 'month':

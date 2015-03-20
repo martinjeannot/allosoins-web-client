@@ -1,4 +1,4 @@
-<form name="eventForm" role="form">
+<form name="eventForm" role="form" novalidate>
   <div class="row">
     <div class="col-md-6">
       <h2>Modifier la consultation</h2>
@@ -54,6 +54,12 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-md-12">
+          <input type="text" ng-model="patient.locationNote" class="form-control">
+        </div>
+      </div>
+
     </div>
 
     <!-- Event section -->
@@ -64,7 +70,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <select ng-model="event.reason">
+          <select ng-model="event.reason" class="form-control">
             <option value="pansement">Pansement</option>
             <option value="prise de sang">Prise de sang</option>
             <option value="injection">Injection</option>

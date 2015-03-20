@@ -16,7 +16,8 @@ angular.module('allosoinsWebClientApp')
       address: '82 rue Norbert Segard, 75015 PARIS',
       phoneNumber: '06 08 95 43 66',
       birthDate: new Date(1976, 3, 12),
-      email: 'emmanuel.bigo@gmail.com'
+      email: 'emmanuel.bigo@gmail.com',
+      locationNote: 'Code : 1809'
     };
 
     return {
